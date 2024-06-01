@@ -23,6 +23,8 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
+                        'gradient-start': '#FF9838',
+                        'gradient-end': '#F00',
                     }
                 }
             }
@@ -70,7 +72,6 @@
     </header>
 
     <main class="container mx-auto">
-
         <!-- Feature Section -->
         <section class="text-center my-24">
             <h2 class="mb-5 text-5xl font-extrabold">Our Featured Products</h2>
@@ -158,7 +159,7 @@
 
         <!-- Super Clint Section -->
         <section
-            class="flex gap-12 flex-col lg:flex-row my-24 mx-2.5 px-16 py-20 rounded-xl bg-gradient-to-r from-[#FF9838] to-[#F00] ">
+            class="flex gap-12 flex-col lg:flex-row my-24 mx-2.5 px-16 py-20 rounded-xl bg-gradient-to-r from-gradient-start to-gradient-end ">
             <div class="flex items-center lg:pr-24">
                 <div class="space-y-5">
                     <h2 class="text-5xl font-extrabold text-white">
@@ -210,9 +211,105 @@
                 </div>
             </div>
         </section>
+
+        <!-- News and Events -->
+        <section>
+            <div class="space-y-10 text-center mb-14">
+                <h2 class="text-5xl font-extrabold">News and Events</h2>
+                <p class="lg:max-w-4xl mx-auto ">There are many variations of passages of Lorem Ipsum available, but the
+                    majority have suffered alteration in some form, by injected humour, or randomised words which don't
+                    look even slightly believable.</p>
+            </div>
+            <div class="grid gap-10 p-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                <!-- event one -->
+                <div class="card  bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="./images/news-1.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body space-y-3">
+                        <p>Feb 05,2025</p>
+                        <h2 class="font-extrabold text-xl">Collecting 8 points for discount</h2>
+                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <p class="font-bold">Learn More</p>
+                    </div>
+                </div>
+                <!-- event 2 -->
+                <div class="card  bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="./images/news-2.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body space-y-3">
+                        <p>Feb 05,2025</p>
+                        <h2 class="font-extrabold text-xl">Collecting 8 points for discount</h2>
+                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <p class="font-bold">Learn More</p>
+                    </div>
+                </div>
+                <!-- event 3 -->
+                <div class="card  bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="./images/news-3.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body space-y-3">
+                        <p>Feb 05,2025</p>
+                        <h2 class="font-extrabold text-xl">Collecting 8 points for discount</h2>
+                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <p class="font-bold">Learn More</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer></footer>
+    <footer class="">
+        <div class="">
+            <div class="footer p-10 bg-[#ffe7e6]  text-neutral-content">
+                <aside>
+                    <img src="./images/cup.png" alt="" srcset="">
+                </aside>
+                <nav>
+                    <div class="grid grid-flow-col gap-4">
+                        <p>Ready To get Started?</p>
+                        <button class="btn bg-gradient-to-r from-gradient-start bg-gradient-end" type="button">Get Started</button>
+                    </div>
+                </nav>
+            </div>
+            <div class="footer p-10 bg-[#ffe7e6] text-base-content ">
+                <nav>
+                    <h6 class="footer-title">Services</h6>
+                    <a class="link link-hover">Branding</a>
+                    <a class="link link-hover">Design</a>
+                    <a class="link link-hover">Marketing</a>
+                    <a class="link link-hover">Advertisement</a>
+                </nav>
+                <nav>
+                    <h6 class="footer-title">Company</h6>
+                    <a class="link link-hover">About us</a>
+                    <a class="link link-hover">Contact</a>
+                    <a class="link link-hover">Jobs</a>
+                    <a class="link link-hover">Press kit</a>
+                </nav>
+                <nav>
+                    <h6 class="footer-title">Legal</h6>
+                    <a class="link link-hover">Terms of use</a>
+                    <a class="link link-hover">Privacy policy</a>
+                    <a class="link link-hover">Cookie policy</a>
+                </nav>
+                <form>
+                    <h6 class="footer-title">Newsletter</h6>
+                    <fieldset class="form-control w-80">
+                        <label class="label">
+                            <span class="label-text">Enter your email address</span>
+                        </label>
+                        <div class="join">
+                            <input type="text" placeholder="username@site.com" class="input input-bordered join-item" />
+                            <button class="btn btn-primary join-item">Subscribe</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
